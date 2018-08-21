@@ -20,7 +20,6 @@ public abstract class BaseActivity extends RxAppCompatActivity {
         super.onCreate(savedInstanceState);
         AppCompatDelegate.setCompatVectorFromResourcesEnabled(true);
         setContentView(getContentView());
-        EventBus.getDefault().register(this);
         unbinder = ButterKnife.bind(this);
         initTopBar();
         initView();
@@ -50,10 +49,8 @@ public abstract class BaseActivity extends RxAppCompatActivity {
 
     @Override
     protected void onDestroy() {
-        EventBus.getDefault().register(this);
         unbinder.unbind();
         BaseApp.getInstance().RemoveActivity(this);
         super.onDestroy();
-
     }
 }
