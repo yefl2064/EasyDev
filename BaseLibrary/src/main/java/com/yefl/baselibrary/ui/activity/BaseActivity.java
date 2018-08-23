@@ -5,9 +5,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatDelegate;
 
 import com.trello.rxlifecycle2.components.support.RxAppCompatActivity;
-import com.yefl.baselibrary.ui.App.BaseApp;
-
-import org.simple.eventbus.EventBus;
+import com.yefl.baselibrary.app.BaseApp;
 
 import butterknife.ButterKnife;
 import butterknife.Unbinder;

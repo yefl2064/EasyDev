@@ -1,0 +1,130 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="QMUI.Compat.NoActionBar">
+        <!-- 配置qmui提供的theme -->
+        <item name="qmui_config_color_blue">@color/app_title_bar_color</item>
+        <item name="qmui_topbar_title_color">@color/qmui_config_color_white</item>
+        <item name="qmui_topbar_subtitle_color">@color/qmui_config_color_white</item>
+        <item name="qmui_topbar_text_btn_color_state_list">@color/s_topbar_btn_color</item>
+        <item name="qmui_topbar_height">48dp</item>
+        <item name="qmui_topbar_image_btn_height">48dp</item>
+        <item name="qmui_round_btn_bg_color">@color/s_btn_blue_bg</item>
+        <item name="qmui_round_btn_border_color">@color/s_btn_blue_border</item>
+        <item name="qmui_round_btn_text_color">@color/s_btn_blue_text</item>
+        <item name="qmui_content_spacing_horizontal">20dp</item>
+        <item name="qmui_content_padding_horizontal">@dimen/qmui_content_spacing_horizontal</item>
+        <item name="QMUITopBarStyle">@style/QDTopBar</item>
+        <!-- 配置app自己的theme -->
+        <item name="app_primary_color">?attr/qmui_config_color_blue</item>
+        <item name="app_content_bg_color">@color/qmui_config_color_white</item>
+    </style>
+
+    <style name="QDTopBar" parent="QMUI.TopBar">
+        <item name="qmui_topbar_bg_color">@color/app_title_bar_color</item>
+    </style>
+
+    <style name="selectPicTheme" parent="picture.default.style">
+        <!-- Customize your theme here. -->
+        <!--标题栏背景色-->
+        <item name="colorPrimary">@color/app_color_blue</item>
+        <!--裁剪页面标题背景色-->
+        <item name="picture.crop.toolbar.bg">@color/app_color_blue</item>
+        <!--状态栏背景色-->
+        <item name="colorPrimaryDark">@color/bar_grey</item>
+        <!--是否改变图片列表界面状态栏字体颜色为黑色-->
+        <item name="picture.statusFontColor">false</item>
+    </style>
+
+    <style name="item_tabrow">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:minHeight">@dimen/normal_40dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">0.2dp</item>
+        <item name="android:textSize">@dimen/normal_24sp</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="item_content">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:minHeight">@dimen/normal_40dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/normal_24sp</item>
+        <item name="android:paddingLeft">@dimen/normal_10dp</item>
+        <item name="android:paddingRight">@dimen/normal_10dp</item>
+    </style>
+
+    <!--分割线-->
+    <style name="item_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5px</item>
+        <item name="android:background">@color/line_background</item>
+    </style>
+
+    <style name="item_line_vertical">
+        <item name="android:layout_width">0.5px</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/line_background</item>
+    </style>
+
+    <style name="rbtn_normal">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/normal_30dp</item>
+        <item name="android:minWidth">@dimen/normal_80dp</item>
+        <item name="android:textSize">@dimen/normal_22sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <style name="mydialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+
+    <style name="NoTitleDialog" parent="Theme.AppCompat.Light.Dialog">
+        <!--没有标题-->
+        <item name="windowNoTitle">true</item>
+        <!--背景透明-->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--是否有覆盖-->
+        <item name="android:windowContentOverlay">@null</item>
+        <!--是否浮动-->
+        <item name="android:windowIsFloating">true</item>
+        <!--边框-->
+        <item name="android:windowFrame">@null</item>
+        <!--背景：透明-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--dialog的整个屏幕的背景是否有遮障层-->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!--动画-->
+        <item name="android:windowAnimationStyle">@style/AnimSlideBottom</item>
+    </style>
+<!--    <style name="myTransparent" parent="Theme.AppCompat.NoActionBar">-->
+    <style name="myTransparent" parent="AppTheme">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+    <style name="AnimSlideBottom" parent="Animation.AppCompat.Dialog">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <style name="SpinnerTheme" parent="Theme.AppCompat.Light">
+        <!--背景透明-->
+        <item name="android:textColor">@color/white</item>
+
+    </style>
+</resources>

@@ -1,4 +1,4 @@
-package com.yefl.baselibrary.ui.App;
+package com.yefl.baselibrary.app;
 
 import android.app.Activity;
 import android.content.Context;
@@ -11,7 +11,6 @@ import com.orhanobut.logger.AndroidLogAdapter;
 import com.orhanobut.logger.FormatStrategy;
 import com.orhanobut.logger.Logger;
 import com.orhanobut.logger.PrettyFormatStrategy;
-import com.tencent.bugly.Bugly;
 import com.yefl.baselibrary.manager.ThreadPoolManager;
 import com.yefl.baselibrary.model.UserInfo;
 import com.zhouyou.http.EasyHttp;
@@ -39,16 +38,16 @@ public class BaseApp extends MultiDexApplication {
         instance = this;
 //        Bugly.init(getApplicationContext(), "dab1abd07e", false);
         activitys = new LinkedList<Activity>();
-        LitePal.initialize(this);//数据库
-        EasyHttp.init(this);
-        EasyHttp.getInstance()
-                .setReadTimeOut(30 * 1000)
-                .setWriteTimeOut(30 * 1000)
-                .setConnectTimeout(30 * 1000);
-        FormatStrategy formatStrategy = PrettyFormatStrategy.newBuilder()
-                .tag("PRT")
-                .build();
-        Logger.addLogAdapter(new AndroidLogAdapter(formatStrategy));
+//        LitePal.initialize(this);//数据库
+//        EasyHttp.init(this);
+//        EasyHttp.getInstance()
+//                .setReadTimeOut(30 * 1000)
+//                .setWriteTimeOut(30 * 1000)
+//                .setConnectTimeout(30 * 1000);
+//        FormatStrategy formatStrategy = PrettyFormatStrategy.newBuilder()
+//                .tag("PRT")
+//                .build();
+//        Logger.addLogAdapter(new AndroidLogAdapter(formatStrategy));
     }
 
 

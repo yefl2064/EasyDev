@@ -48,6 +48,7 @@ dependencies {
     api 'com.android.support:support-vector-drawable:26.0.1'
     api 'com.android.support.constraint:constraint-layout:1.0.2'
 
+    api 'com.android.support:multidex:1.0.2'
     api 'com.qmuiteam:qmui:1.0.6'
     api 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.4'
     api 'com.scwang.smartrefresh:SmartRefreshHeader:1.0.4'
@@ -87,5 +88,5 @@ dependencies {
     api 'cn.bingoogolapple:bga-qrcode-zxing:1.2.5'
     api 'com.trello.rxlifecycle2:rxlifecycle:2.2.2'
     api 'com.trello.rxlifecycle2:rxlifecycle-components:2.2.2'
-
+    api 'com.github.licheedev.CommonSize:common_size_w750_n1334:1.3'
 }
